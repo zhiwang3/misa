@@ -40,9 +40,9 @@ Tile_Shape tile_shape(64, 64, 16)
 
 int ofm_addr, ifm_addr, wt_addr;
 int stride = 1;
-int kernel_size = 3;
+Kernel_Shape kernel_size(3, 3, 64, 256);
 int padding_size = 1;
-char padding_type = 'zero'
+char padding_type = 'zero';
 args_type args_param;
 
 mr_type(args_param, stride, kernel_size, padding_size, padding_type);
